@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+header
+{
+display: flex;
+background-color: black;
+color: white;
+padding: 5px;
+justify-content: space-between;
+}
+.search
+{
+    background-color: rgb(88, 85, 85);
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.search input{
+    background-color: rgb(88, 85, 85);
+    text-decoration: none;
+    border: 2px solid rgb(88, 85, 85);
+    width:350px
+    
+}
