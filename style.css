@@ -3,25 +3,74 @@
     margin:0;
     box-sizing: border-box;
 }
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    background: black;
+    gap: 10px;
+}
 header
 {
+grid-column: span 2;
 display: flex;
 background-color: black;
 color: white;
+font-size: 25px;
 padding: 5px;
 justify-content: space-between;
+align-items: center;
 }
 .search
 {
-    background-color: rgb(88, 85, 85);
+    background-color: rgb(46, 43, 43);
     padding: 5px;
     border: 2px solid white;
     border-radius: 20px;
 }
 .search input{
-    background-color: rgb(88, 85, 85);
+    background-color: rgb(46, 43, 43);
     text-decoration: none;
-    border: 2px solid rgb(88, 85, 85);
+    border: 2px solid rgb(46, 43, 43);
     width:350px
     
+}
+.left_nav a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.right_nav a
+{
+   color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px; 
+}
+.right_nav button
+{
+    background-color: white;
+    padding:15px 25px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+aside{
+    background: rgb(31, 29, 29);
+    color: beige;
+}
+main{
+    background:rgb(31, 29, 29) ;
+}
+.aside_top
+{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.aside_top h5{
+    font-size: 50px;
+    font-weight: bold;
 }
